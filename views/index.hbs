@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vimeo downloader</title>
+</head>
+<body>
+
+<form action="/download"  method="GET">
+    <label>
+        <input onchange="document.getElementById('url').value=document.getElementById('url').value" id="url" type="text" name="data">
+    </label>
+    <input type="submit" value="Download a file" />
+    <br>
+
+    <iframe  id="display" style="width: 800px; height: 500px" src={{url}}></iframe>
+</form>
+</body>
+
+
+
+
+</html>
